@@ -1,2 +1,12 @@
 @startuml
+package "Acme.Hello.Platform.Generic.Domain.Model.Entities" {
+class Developer {
++Guid Guid
++string FirstName
++string LastName
++string GetFullName()
++bool HasAnyNameEmpty()
+}
+}
+}
 @enduml
