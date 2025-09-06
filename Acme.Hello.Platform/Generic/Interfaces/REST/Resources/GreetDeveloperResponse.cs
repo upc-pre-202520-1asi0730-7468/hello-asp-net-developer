@@ -7,11 +7,11 @@ namespace Acme.Hello.Platform.Generic.Interfaces.REST.Resources;
 /// <param name="FirstName">The first name of the developer, which can be null.</param>
 /// <param name="LastName">The last name of the developer, which can be null.</param>
 /// <param name="Message">The greeting message to be returned to the caller.</param>
-public record GreetDeveloperResponse(Guid? Id, string? FirstName, string? LastName, string Message)
+public record GreetDeveloperResponse(Guid? Id, string? FullName, string Message)
 {
     /// <summary>
     /// Creates a new GreetDeveloperResponse with a message. 
     /// </summary>
     /// <param name="message">The greeting message to be returned to the caller.</param>
-    public GreetDeveloperResponse(string message) : this(null, null, null, message) { }
+    public GreetDeveloperResponse(string message) : this(null, null, message) { }
 }
